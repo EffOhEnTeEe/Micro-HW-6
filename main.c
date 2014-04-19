@@ -14,8 +14,9 @@
 
 void InitI2C1master() {
 
-  // TO BE DEFINED BY YOU
-  // ...
+  I2CSetFrequency(I2C1, 10000000, 50000);   // Setup I2C1 with input clock 10MHz and output 50kHz
+  I2CConfigure(I2C1, 0);                    // Setup I2C1 with no extra configuration settings
+  I2CEnable(I2C1, 1);                       // Enables the I2C1 module
 
 }
 
